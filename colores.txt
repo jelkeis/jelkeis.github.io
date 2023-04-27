@@ -1,0 +1,17 @@
+-----------------------------------------------------------
+rojo: calor, valentia, pasion, agresividad, fuerza, peligro
+---------------------------------------------------------------------
+azul: frio, inteligencia, confianza, seriedad, calma, profesionalismo
+---------------------------------------------------------------------
+amarillo: alegria, curiosidad, energia, verano, optimismo, alerta
+-----------------------------------------------------------------------
+violeta: creatividad, misterio, calidad, fantasia, lujo, particularidad
+-----------------------------------------------------------------------
+verde: naturaleza, salud, paz, inocencia, equilibrio, crecimiento
+-----------------------------------------------------------------
+naranja: calido, ludico, amistad, llamativo, seguridad, optimismo
+-------------------------------------------------------------------
+negro: oscuridad, glamour, sofisticado, poder, elegancia, sobriedad
+-------------------------------------------------------------------
+blanco: claridad, bondad, simpleza, limpieza, pureza, sutileza
+--------------------------------------------------------------
