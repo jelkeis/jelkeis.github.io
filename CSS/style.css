@@ -1,0 +1,94 @@
+/* Variables */
+
+
+
+
+/* Global CSS */
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(../IMG/lgBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+/* Particular CSS */
+
+
+.headerBg {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(20px);
+}
+
+.linkHeader {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: rgba(200, 200, 200);
+  text-decoration: none;
+}
+
+.drpDwnItem {
+  background-color: rgb(130, 130, 130);
+}
+
+.drpDwnItem:hover {
+  background-color: rgb(130, 130, 130);
+}
+
+.activeDrpDwnItem {
+  color: rgb(107, 45, 208);
+}
+
+.activeDrpDwnItem:hover {
+  background-color: rgb(130, 130, 130);
+  color: rgb(107, 45, 208);
+}
+
+.strongIdiom {
+  border: 1px solid rgb(107, 45, 208);
+  border-radius: 10px;
+}
+
+.DrpDwnBg {
+  background-color: rgb(130, 130, 130);
+}
+
+.btnIdiomDrpDwn,
+.btnIdiomDrpDwn:hover,
+.btnIdiomDrpDwn:focus {
+  color: rgb(200, 200, 200);
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.btnIdiomDrpDwn:active {
+  color: rgb(107, 45, 208) !important;
+  border: 1px solid rgb(107, 45, 208) !important;
+}
+
+.headerIcon {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 100px/2);
+  width: 100px;
+  height: 100px;
+  background-color: rgb(190, 30, 216);
+  border: 4px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+.idiomDrpDwn {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+  font-size: 30px;
+}
