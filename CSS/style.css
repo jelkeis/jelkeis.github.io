@@ -11,18 +11,79 @@
   padding: 0px;
 }
 
-body {
-  background-image: url(../IMG/lgBackground.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-attachment: fixed;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 
 
 /* Particular CSS */
 
+/* PC */
+@media (min-width:1024px) {
+  body {
+    background-image: url(../IMG/lgBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* TABLET VERTICAL */
+@media (min-width:768px) and (max-width:1023px) {
+  body {
+    background-image: url(../IMG/mdBackgroundVertical.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* TABLET HORIZONTAL */
+@media (min-width:768px) and (max-width:1023px) and (orientation: landscape) {
+  body {
+    background-image: url(../IMG/mdBackgroundHorizontal.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* CELULAR VERTICAL */
+@media (max-width:767px) {
+  body {
+    background-image: url(../IMG/smBackgroundVertical.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* CELULAR HORIZONTAL */
+@media (max-width:767px) and (orientation: landscape) {
+  body {
+    background-image: url(../IMG/smBackgroundHorizontal.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
 
 .headerBg {
   height: 100px;
@@ -91,4 +152,112 @@ body {
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
   font-size: 30px;
+}
+
+.firstText,
+.thirdText {
+  height: 300px;
+  background-color: rgba(10, 22, 37, 0.6);
+  border-radius: 50px;
+  color: rgb(238, 238, 238);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  user-select: none;
+}
+
+.secondText {
+  /* height: 600px; */
+  height: 300px;
+  background-color: rgba(10, 22, 37, 0.6);
+  /* border-radius: 50px; */
+  color: rgb(238, 238, 238);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.h4MainIndex {
+  color: rgba(238, 238, 238, 1);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.pMainIndex {
+  color: rgba(172, 213, 242, 1);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.secondText1 {
+  border-top-left-radius: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+}
+
+.secondText2 {
+  border-top-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.secondText3 {
+  border-bottom-left-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.secondText4 {
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.divMainText {
+  height: 250px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerIndex {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnContact,
+.btnContact:hover,
+.btnContact:focus,
+.btnContact:active {
+  background-color: rgb(10, 22, 37);
+  color: white;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+}
+
+/* .btnContact:active {
+  
+} */
+
+.linkFooter {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(10, 22, 37);
+  text-decoration: none;
+  color: white;
 }
