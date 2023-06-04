@@ -1,4 +1,5 @@
-/* const options = {
+/* const url = `https://myanimelist.p.rapidapi.com/manga/110029`
+const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': 'ab63a3b05bmsh266510271858db3p19b11djsn7775d80717d2',
@@ -26,5 +27,51 @@ async function fetchData() {
 		console.error(error);
 	}
 }
+
+fetchData(); */
+
+
+
+
+
+
+
+
+
+
+/* const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'ab63a3b05bmsh266510271858db3p19b11djsn7775d80717d2',
+		'X-RapidAPI-Host': 'myanimelist.p.rapidapi.com'
+	}
+};
+
+async function fetchData() {
+	try {
+		const flipCards = document.querySelectorAll('.flip-card')
+		const htmlName = document.documentElement.getAttribute('data-html')
+
+		for (const flipCard of flipCards) {
+			const animeId = flipCard.id
+			let url;
+
+			if (htmlName === 'animes') {
+				url = `https://myanimelist.p.rapidapi.com/anime/${animeId}`;
+			} else {
+				url = `https://myanimelist.p.rapidapi.com/manga/${animeId}`;
+			}
+
+			console.log(url);
+			const response = await fetch(url, options);
+			const result = await response.json();
+			console.log(result);
+		}
+
+	} catch (error) {
+		console.log(error);
+	}
+}
+
 
 fetchData(); */

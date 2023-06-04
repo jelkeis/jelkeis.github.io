@@ -33,6 +33,7 @@
 	/* Safari */
 	backface-visibility: hidden;
 	border-radius: 10px;
+	box-shadow: 0.1rem 0.5rem 0.7rem rgba(0, 0, 0, 0.75);
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -43,7 +44,7 @@
 
 /* Style the back side */
 .flip-card-back {
-	background: linear-gradient(152.25deg, #3F7DC7 0%, #741ABB 100%);
+	background: linear-gradient(152.25deg, rgba(63, 125, 199, 0.8) 0%, rgba(116, 26, 187, 0.8) 65%);
 	color: white;
 	transform: rotateY(180deg);
 	display: flex;
