@@ -1,4 +1,4 @@
-const options = {
+/* const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': 'ab63a3b05bmsh266510271858db3p19b11djsn7775d80717d2',
@@ -27,4 +27,4 @@ async function fetchData() {
 	}
 }
 
-fetchData();
+fetchData(); */
