@@ -1,55 +1,92 @@
-@keyframes expandCard {
-	from {
-		width: 375px;
-		height: 525px;
-	}
+/* ------------------------------------------------------------ Variables ------------------------------------------------------------ */
 
-	to {
-		width: 854px;
-		height: 480px;
+
+
+
+
+/* ------------------------------------------------------------ RESPONSIVE ------------------------------------------------------------ */
+
+
+/* PC VERTICAL */
+@media (min-width:1024px) and (orientation: portrait) {
+	body {
+		background-image: url(../IMG/backgrounds/lgBackgroundVertical.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
 	}
 }
 
-/* @keyframes toLowerCard {
-	0% {
-		transform: translateY();
+/* PC HORIZONTAL*/
+@media (min-width:1024px) and (orientation: landscape) {
+	body {
+		background-image: url(../IMG/backgrounds/lgBackgroundHorizontal.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
 	}
-
-	50% {
-		transform: translateY();
-	}
-
-	100% {
-		transform: translateY();
-	}
-} */
-
-
-.expandCard {
-	animation-name: expandCard;
-	animation-duration: 1.5s;
-	animation-timing-function: ease-in;
-	animation-delay: 0s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
 }
 
-/* 	
-	se puede poner eso en clases y despues hacer que javascript ponga a traves del boton el nombre de las clases al clickear
-	
-	capaz puedo usar transform: translateY para moverlo hacia abajo, pero no se si es relativo o absoluto con las cards de abajo
-*/
+/* TABLET VERTICAL */
+@media (min-width:768px) and (max-width:1023px) and (orientation: portrait) {
+	body {
+		background-image: url(../IMG/backgrounds/mdBackgroundVertical.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+}
+
+/* TABLET HORIZONTAL */
+@media (min-width:768px) and (max-width:1023px) and (orientation: landscape) {
+	body {
+		background-image: url(../IMG/backgrounds/mdBackgroundHorizontal.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+}
+
+/* CELULAR VERTICAL */
+@media (max-width:767px) and (orientation: portrait) {
+	body {
+		background-image: url(../IMG/backgrounds/smBackgroundVertical.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+}
+
+/* CELULAR HORIZONTAL */
+@media (max-width:767px) and (orientation: landscape) {
+	body {
+		background-image: url(../IMG/backgrounds/smBackgroundHorizontal.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+}
 
 
-
-
-/* Variables */
-
-
-
-
-/* Global CSS */
+/* ------------------------------------------------------------ ALL ------------------------------------------------------------ */
 
 
 * {
@@ -61,6 +98,86 @@
 	width: 0px;
 	background: transparent;
 }
+
+
+/* ------------------------------------------------------------ GLOBAL CSS ------------------------------------------------------------ */
+
+
+/* Header */
+
+.headerBg {
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(20px);
+}
+
+.linkHeader {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	color: rgba(200, 200, 200);
+	text-decoration: none;
+}
+
+.drpDwnItem {
+	background-color: rgb(130, 130, 130);
+}
+
+.drpDwnItem:hover {
+	background-color: rgb(130, 130, 130);
+}
+
+.activeDrpDwnItem {
+	color: rgb(107, 45, 208);
+}
+
+.activeDrpDwnItem:hover {
+	background-color: rgb(130, 130, 130);
+	color: rgb(107, 45, 208);
+}
+
+.strongIdiom {
+	border: 1px solid rgb(107, 45, 208);
+	border-radius: 10px;
+}
+
+.DrpDwnBg {
+	background-color: rgb(130, 130, 130);
+}
+
+.btnIdiomDrpDwn,
+.btnIdiomDrpDwn:hover,
+.btnIdiomDrpDwn:focus {
+	color: rgb(200, 200, 200);
+	border: 1px solid rgb(200, 200, 200);
+}
+
+.btnIdiomDrpDwn:active {
+	color: rgb(107, 45, 208) !important;
+	border: 1px solid rgb(107, 45, 208) !important;
+}
+
+.headerIcon {
+	position: absolute;
+	top: 50px;
+	left: calc(50% - 100px/2);
+	width: 100px;
+	height: 100px;
+	background-color: rgb(190, 30, 216);
+	border: 4px solid rgba(0, 0, 0, 0.6);
+	border-radius: 50%;
+}
+
+.idiomDrpDwn {
+	font-family: 'Inconsolata', monospace;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+/* Footer */
 
 .footerBg {
 	height: 60px;
@@ -75,6 +192,47 @@
 	height: 50px;
 	width: 150px;
 }
+
+.linkFooter {
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: rgb(10, 22, 37);
+	text-decoration: none;
+	color: white;
+}
+
+#Instagram {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	-webkit-background-clip: text;
+	/* Also define standard property for compatibility */
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.footerIndex {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btnContact,
+.btnContact:hover,
+.btnContact:focus,
+.btnContact:active {
+	background-color: rgb(10, 22, 37);
+	color: white;
+	border-radius: 50px;
+	height: 50px;
+	width: 150px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+/* MAIN */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -147,6 +305,7 @@ h1 {
 }
 
 p {
+	/* PONERLE CLASE PARA NO USAR <p> */
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 24px;
@@ -154,12 +313,13 @@ p {
 }
 
 span {
+	/* PONERLE CLASE PARA NO USAR <span> */
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 700;
 	font-size: 20px;
 }
 
-.allCards{
+.allCards {
 	margin-bottom: 7rem;
 }
 
@@ -219,143 +379,6 @@ span {
 	transition-duration: 0.3s;
 }
 
-
-/* Particular CSS */
-
-/* PC */
-@media (min-width:1024px) {
-	body {
-		background-image: url(../IMG/backgrounds/lgBackground.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom;
-		background-size: cover;
-		background-attachment: fixed;
-		scrollbar-width: none;
-		-ms-overflow-style: none;
-	}
-}
-
-/* TABLET VERTICAL */
-@media (min-width:768px) and (max-width:1023px) {
-	body {
-		background-image: url(../IMG/backgrounds/mdBackgroundVertical.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom;
-		background-size: cover;
-		background-attachment: fixed;
-		scrollbar-width: none;
-		-ms-overflow-style: none;
-	}
-}
-
-/* TABLET HORIZONTAL */
-@media (min-width:768px) and (max-width:1023px) and (orientation: landscape) {
-	body {
-		background-image: url(../IMG/backgrounds/mdBackgroundHorizontal.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom;
-		background-size: cover;
-		background-attachment: fixed;
-		scrollbar-width: none;
-		-ms-overflow-style: none;
-	}
-}
-
-/* CELULAR VERTICAL */
-@media (max-width:767px) {
-	body {
-		background-image: url(../IMG/backgrounds/smBackgroundVertical.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom;
-		background-size: cover;
-		background-attachment: fixed;
-		scrollbar-width: none;
-		-ms-overflow-style: none;
-	}
-}
-
-/* CELULAR HORIZONTAL */
-@media (max-width:767px) and (orientation: landscape) {
-	body {
-		background-image: url(../IMG/backgrounds/smBackgroundHorizontal.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom;
-		background-size: cover;
-		background-attachment: fixed;
-		scrollbar-width: none;
-		-ms-overflow-style: none;
-	}
-}
-
-.headerBg {
-	height: 100px;
-	background-color: rgba(0, 0, 0, 0.6);
-	backdrop-filter: blur(20px);
-}
-
-.linkHeader {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 800;
-	font-size: 40px;
-	color: rgba(200, 200, 200);
-	text-decoration: none;
-}
-
-.drpDwnItem {
-	background-color: rgb(130, 130, 130);
-}
-
-.drpDwnItem:hover {
-	background-color: rgb(130, 130, 130);
-}
-
-.activeDrpDwnItem {
-	color: rgb(107, 45, 208);
-}
-
-.activeDrpDwnItem:hover {
-	background-color: rgb(130, 130, 130);
-	color: rgb(107, 45, 208);
-}
-
-.strongIdiom {
-	border: 1px solid rgb(107, 45, 208);
-	border-radius: 10px;
-}
-
-.DrpDwnBg {
-	background-color: rgb(130, 130, 130);
-}
-
-.btnIdiomDrpDwn,
-.btnIdiomDrpDwn:hover,
-.btnIdiomDrpDwn:focus {
-	color: rgb(200, 200, 200);
-	border: 1px solid rgb(200, 200, 200);
-}
-
-.btnIdiomDrpDwn:active {
-	color: rgb(107, 45, 208) !important;
-	border: 1px solid rgb(107, 45, 208) !important;
-}
-
-.headerIcon {
-	position: absolute;
-	top: 50px;
-	left: calc(50% - 100px/2);
-	width: 100px;
-	height: 100px;
-	background-color: rgb(190, 30, 216);
-	border: 4px solid rgba(0, 0, 0, 0.6);
-	border-radius: 50%;
-}
-
-.idiomDrpDwn {
-	font-family: 'Inconsolata', monospace;
-	font-weight: 400;
-	font-size: 30px;
-}
-
 .firstText,
 .thirdText {
 	height: 300px;
@@ -369,11 +392,27 @@ span {
 	user-select: none;
 }
 
+/* .firstText,
+.rowSecondText,
+.thirdText{
+	box-shadow: 0px 20px 160px blue;
+} */
+
+.rowSecondText {
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+/* .rowSecondText{
+	text-shadow: 5px 5px 8px lightblue;
+	box-shadow: 5px 5px 8px lightblue;
+} */
+
 .secondText {
 	/* height: 600px; */
 	height: 300px;
 	background-color: rgba(10, 22, 37, 0.6);
-	/* border-radius: 50px; */
 	color: rgb(238, 238, 238);
 	border: 1px solid rgba(0, 0, 0, 0.5);
 	user-select: none;
@@ -431,44 +470,4 @@ span {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.footerIndex {
-	height: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-
-.btnContact,
-.btnContact:hover,
-.btnContact:focus,
-.btnContact:active {
-	background-color: rgb(10, 22, 37);
-	color: white;
-	border-radius: 50px;
-	height: 50px;
-	width: 150px;
-}
-
-/* .btnContact:active {
-  
-} */
-
-.linkFooter {
-	width: 150px;
-	height: 50px;
-	border-radius: 50px;
-	background-color: rgb(10, 22, 37);
-	text-decoration: none;
-	color: white;
-}
-
-#Instagram {
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-	-webkit-background-clip: text;
-	/* Also define standard property for compatibility */
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
 }

@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ Animations ------------------------------------------------------------ */
+
+
+@keyframes expandCard {
+	from {
+		width: 375px;
+		height: 525px;
+	}
+
+	to {
+		width: 854px;
+		height: 480px;
+	}
+}
+
+/* @keyframes toLowerCard {
+	0% {
+		transform: translateY();
+	}
+
+	50% {
+		transform: translateY();
+	}
+
+	100% {
+		transform: translateY();
+	}
+} */
+
+.expandCard {
+	animation-name: expandCard;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+/* 	
+	se puede poner eso en clases y despues hacer que javascript ponga a traves del boton el nombre de las clases al clickear
+	
+	capaz puedo usar transform: translateY para moverlo hacia abajo, pero no se si es relativo o absoluto con las cards de abajo
+*/
