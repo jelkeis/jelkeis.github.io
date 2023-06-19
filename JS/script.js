@@ -54,27 +54,48 @@ flipCardBtn.forEach(function (flipCardBtn) {
 
     switch (siblingCard % 3) {
       case 1 /* primera columna */:
-        document.getElementById(`card${siblingCard+1}`).classList.add('toLowerCard');
-        document.getElementById(`card${siblingCard+2}`).classList.add('toLowerCard');
+				if (document.getElementById(`card${siblingCard+1}`).classList.contains('toHigherCard')) {
+					document.getElementById(`card${siblingCard+1}`).classList.replace('toHigherCard' ,'toLowerCard');
+					document.getElementById(`card${siblingCard+2}`).classList.replace('toHigherCard' ,'toLowerCard');
+				} else{
+					document.getElementById(`card${siblingCard+1}`).classList.add('toLowerCard');
+					document.getElementById(`card${siblingCard+2}`).classList.add('toLowerCard');
+				}
         document.getElementById(`card${siblingCard+1}`).style.position = 'relative';
         document.getElementById(`card${siblingCard+2}`).style.position = 'relative';
-        flipCard.closest('.row').classList.add('asdaa');
-       /*  document.getElementById(`card${siblingCard+1}`).style.add('start-50');
-        document.getElementById(`card${siblingCard+2}`).style.add('start-50'); */
+        document.getElementById(`card${siblingCard+1}`).style.left = '447px';
+        document.getElementById(`card${siblingCard+2}`).style.left = '447px';
+        flipCard.closest('.row').classList.add('enlargeCards');
         break;
 
       case 2 /* segunda columna */:
-        document.getElementById(`card${siblingCard-1}`).classList.add('toLowerCard');
-        document.getElementById(`card${siblingCard+1}`).classList.add('toLowerCard');
+        if (document.getElementById(`card${siblingCard-1}`).classList.contains('toHigherCard')) {
+					document.getElementById(`card${siblingCard-1}`).classList.replace('toHigherCard' ,'toLowerCard');
+					document.getElementById(`card${siblingCard+1}`).classList.replace('toHigherCard' ,'toLowerCard');
+				} else{
+					document.getElementById(`card${siblingCard-1}`).classList.add('toLowerCard');
+					document.getElementById(`card${siblingCard+1}`).classList.add('toLowerCard');
+				}
         document.getElementById(`card${siblingCard-1}`).style.position = 'relative';
         document.getElementById(`card${siblingCard+1}`).style.position = 'relative';
+        document.getElementById(`card${siblingCard-1}`).style.position = 'relative';
+        document.getElementById(`card${siblingCard+1}`).style.position = 'relative';
+				flipCard.closest('.row').classList.add('enlargeCards');
         break;
 
       case 0 /* tercera columna */:
-        document.getElementById(`card${siblingCard-2}`).classList.add('toLowerCard');
-        document.getElementById(`card${siblingCard-1}`).classList.add('toLowerCard');
+        if (document.getElementById(`card${siblingCard-1}`).classList.contains('toHigherCard')) {
+					document.getElementById(`card${siblingCard-2}`).classList.replace('toHigherCard' ,'toLowerCard');
+					document.getElementById(`card${siblingCard-1}`).classList.replace('toHigherCard' ,'toLowerCard');
+				} else{
+					document.getElementById(`card${siblingCard-2}`).classList.add('toLowerCard');
+					document.getElementById(`card${siblingCard-1}`).classList.add('toLowerCard');
+				}
         document.getElementById(`card${siblingCard-2}`).style.position = 'relative';
         document.getElementById(`card${siblingCard-1}`).style.position = 'relative';
+        document.getElementById(`card${siblingCard-2}`).style.position = 'relative';
+        document.getElementById(`card${siblingCard-1}`).style.position = 'relative';
+				flipCard.closest('.row').classList.add('enlargeCards');
         break;
     }
   });
@@ -87,6 +108,7 @@ closeClickBtn.forEach(function (closeClickBtn) {
   let flipCard = closeClickBtn.parentElement.parentElement.parentElement.parentElement;
   let allCards = closeClickBtn.closest('.allCards')
   let flipCardClick = closeClickBtn.parentElement.parentElement;
+	let asdasd = document.querySelectorAll('.toLowerCard');
 
 
   closeClickBtn.addEventListener('click', function () {
@@ -95,6 +117,20 @@ closeClickBtn.forEach(function (closeClickBtn) {
     allCards.classList.remove('position-absolute');
     allCards.classList.replace('col-12', 'col-4');
     flipCardClick.classList.replace('d-block', 'd-none');
+		flipCard.closest('.row').classList.remove('enlargeCards');
+		
+
+		allCards.nextElementSibling.style.left = null;
+    allCards.nextElementSibling.nextElementSibling.style.left = null;
+
+
+
+		allCards.nextElementSibling.classList.replace('toLowerCard', 'toHigherCard');
+		allCards.nextElementSibling.nextElementSibling.classList.replace('toLowerCard', 'toHigherCard')
+		
+		/* asdasd.classList.remove('toLowerCard');
+		asdasd.classList.add('toHigherCard'); */
+
 
   })
 

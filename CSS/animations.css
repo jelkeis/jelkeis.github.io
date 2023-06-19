@@ -21,6 +21,7 @@
 	animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-fill-mode: forwards;
+	z-index: 99;
 }
 
 
@@ -45,7 +46,25 @@
 	animation-fill-mode: forwards;
 }
 
+@keyframes toHigherCard {
+	from {
+		transform: translateY(749px);
+	}
 
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.toHigherCard{
+	animation-name: toHigherCard;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
 
 
 /* 	
