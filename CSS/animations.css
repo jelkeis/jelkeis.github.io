@@ -13,20 +13,6 @@
 	}
 }
 
-/* @keyframes toLowerCard {
-	0% {
-		transform: translateY();
-	}
-
-	50% {
-		transform: translateY();
-	}
-
-	100% {
-		transform: translateY();
-	}
-} */
-
 .expandCard {
 	animation-name: expandCard;
 	animation-duration: 1.5s;
@@ -36,6 +22,31 @@
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 }
+
+
+
+@keyframes toLowerCard {
+	0% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(749px);
+	}
+}
+
+.toLowerCard {
+	animation-name: toLowerCard;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+
+
 
 /* 	
 	se puede poner eso en clases y despues hacer que javascript ponga a traves del boton el nombre de las clases al clickear
