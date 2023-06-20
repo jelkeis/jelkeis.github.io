@@ -1,5 +1,45 @@
 /* ------------------------------------------------------------ Animations ------------------------------------------------------------ */
 
+@keyframes asd {
+	from {
+		width: 33.3%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+.asd {
+	animation-name: asd;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	z-index: 99;
+}
+
+/* @keyframes none {
+	from {
+		display: block;
+	}
+
+	to {
+		display: none!important;
+	}
+}
+.none {
+	animation-name: none;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	z-index: 99;
+} */
+
 
 @keyframes expandCard {
 	from {
@@ -17,7 +57,7 @@
 	animation-name: expandCard;
 	animation-duration: 1.5s;
 	animation-timing-function: ease-in;
-	animation-delay: 0s;
+	animation-delay: 2s;
 	animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-fill-mode: forwards;
@@ -28,11 +68,11 @@
 
 @keyframes toLowerCard {
 	0% {
-		transform: translateY(0px);
+		transform: translateY(0px); /* tengo que usar variables */
 	}
 
 	100% {
-		transform: translateY(749px);
+		transform: translateY(749px); /* tengo que usar variables */
 	}
 }
 
