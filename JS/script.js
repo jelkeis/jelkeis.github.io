@@ -1,3 +1,6 @@
+/* Poner todas las variables y constantes afuera de la funcion */
+/* Buscar formas de achicar el codigo o hacerlo mejor */
+/* Comentar todos los bloques de codigo para saber que hacen */
 const cards = document.getElementsByClassName("allCards");
 let flipCardBtn = document.querySelectorAll('.flipCardBtn');
 let closeClickBtn = document.querySelectorAll('.closeClickBtn');
@@ -139,11 +142,6 @@ closeClickBtn.forEach(function (closeClickBtn) {
       closeFlipCard();
     }
   })
-  /* document.addEventListener('keydown', function(e){
-    if (key = '27'){
-      closeFlipCard();
-    }
-  }) */
 
 
 })
