@@ -1,263 +1,475 @@
-/* Variables */
+/* ------------------------------------------------------------ Variables ------------------------------------------------------------ */
 
-
-
-
-/* Global CSS */
-
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+.enlargeCards {
+	height: 1498px;
 }
 
 
 
-/* Particular CSS */
+/* ------------------------------------------------------------ RESPONSIVE ------------------------------------------------------------ */
 
-/* PC */
-@media (min-width:1024px) {
-  body {
-    background-image: url(../IMG/lgBackground.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+
+/* PC VERTICAL */
+@media (min-width:1024px) and (orientation: portrait) {
+	body {
+		background-image: url(../IMG/backgrounds/lgBackgroundVertical.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+}
+
+/* PC HORIZONTAL*/
+@media (min-width:1024px) and (orientation: landscape) {
+	body {
+		background-image: url(../IMG/backgrounds/lgBackgroundHorizontal.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 }
 
 /* TABLET VERTICAL */
-@media (min-width:768px) and (max-width:1023px) {
-  body {
-    background-image: url(../IMG/mdBackgroundVertical.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+@media (min-width:768px) and (max-width:1023px) and (orientation: portrait) {
+	body {
+		background-image: url(../IMG/backgrounds/mdBackgroundVertical.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 }
 
 /* TABLET HORIZONTAL */
 @media (min-width:768px) and (max-width:1023px) and (orientation: landscape) {
-  body {
-    background-image: url(../IMG/mdBackgroundHorizontal.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+	body {
+		background-image: url(../IMG/backgrounds/mdBackgroundHorizontal.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 }
 
 /* CELULAR VERTICAL */
-@media (max-width:767px) {
-  body {
-    background-image: url(../IMG/smBackgroundVertical.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+@media (max-width:767px) and (orientation: portrait) {
+	body {
+		background-image: url(../IMG/backgrounds/smBackgroundVertical.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 }
 
 /* CELULAR HORIZONTAL */
 @media (max-width:767px) and (orientation: landscape) {
-  body {
-    background-image: url(../IMG/smBackgroundHorizontal.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+	body {
+		background-image: url(../IMG/backgrounds/smBackgroundHorizontal.jpg);
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: cover;
+		background-attachment: fixed;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
 }
 
+
+/* ------------------------------------------------------------ ALL ------------------------------------------------------------ */
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+
+/* ------------------------------------------------------------ GLOBAL CSS ------------------------------------------------------------ */
+
+
+/* Header */
+
 .headerBg {
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(20px);
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(20px);
 }
 
 .linkHeader {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  color: rgba(200, 200, 200);
-  text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	color: rgba(200, 200, 200);
+	text-decoration: none;
 }
 
 .drpDwnItem {
-  background-color: rgb(130, 130, 130);
+	background-color: rgb(130, 130, 130);
 }
 
 .drpDwnItem:hover {
-  background-color: rgb(130, 130, 130);
+	background-color: rgb(130, 130, 130);
 }
 
 .activeDrpDwnItem {
-  color: rgb(107, 45, 208);
+	color: rgb(107, 45, 208);
 }
 
 .activeDrpDwnItem:hover {
-  background-color: rgb(130, 130, 130);
-  color: rgb(107, 45, 208);
+	background-color: rgb(130, 130, 130);
+	color: rgb(107, 45, 208);
 }
 
 .strongIdiom {
-  border: 1px solid rgb(107, 45, 208);
-  border-radius: 10px;
+	border: 1px solid rgb(107, 45, 208);
+	border-radius: 10px;
 }
 
 .DrpDwnBg {
-  background-color: rgb(130, 130, 130);
+	background-color: rgb(130, 130, 130);
 }
 
 .btnIdiomDrpDwn,
 .btnIdiomDrpDwn:hover,
 .btnIdiomDrpDwn:focus {
-  color: rgb(200, 200, 200);
-  border: 1px solid rgb(200, 200, 200);
+	color: rgb(200, 200, 200);
+	border: 1px solid rgb(200, 200, 200);
 }
 
 .btnIdiomDrpDwn:active {
-  color: rgb(107, 45, 208) !important;
-  border: 1px solid rgb(107, 45, 208) !important;
+	color: rgb(107, 45, 208) !important;
+	border: 1px solid rgb(107, 45, 208) !important;
 }
 
 .headerIcon {
-  position: absolute;
-  top: 50px;
-  left: calc(50% - 100px/2);
-  width: 100px;
-  height: 100px;
-  background-color: rgb(190, 30, 216);
-  border: 4px solid rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
+	position: absolute;
+	top: 50px;
+	left: calc(50% - 100px/2);
+	width: 100px;
+	height: 100px;
+	background-color: rgb(190, 30, 216);
+	border: 4px solid rgba(0, 0, 0, 0.6);
+	border-radius: 50%;
 }
 
 .idiomDrpDwn {
-  font-family: 'Inconsolata', monospace;
-  font-weight: 400;
-  font-size: 30px;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 400;
+	font-size: 30px;
 }
 
-.firstText,
-.thirdText {
-  height: 300px;
-  background-color: rgba(10, 22, 37, 0.6);
-  border-radius: 50px;
-  color: rgb(238, 238, 238);
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  user-select: none;
+/* ------------------------------------------------------------ */
+
+
+/* Footer */
+
+.footerBg {
+	height: 60px;
+	background-color: black;
 }
 
-.secondText {
-  /* height: 600px; */
-  height: 300px;
-  background-color: rgba(10, 22, 37, 0.6);
-  /* border-radius: 50px; */
-  color: rgb(238, 238, 238);
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  user-select: none;
+.footerBtn {
+	background-color: #0A1625;
+	color: white;
+	border: none;
+	border-radius: 50px;
+	height: 50px;
+	width: 150px;
 }
 
-.h4MainIndex {
-  color: rgba(238, 238, 238, 1);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
+.linkFooter {
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: rgb(10, 22, 37);
+	text-decoration: none;
+	color: white;
 }
 
-.pMainIndex {
-  color: rgba(172, 213, 242, 1);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.secondText1 {
-  border-top-left-radius: 50px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-align: left;
-}
-
-.secondText2 {
-  border-top-right-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: right;
-}
-
-.secondText3 {
-  border-bottom-left-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-
-.secondText4 {
-  border-bottom-right-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: right;
-}
-
-.divMainText {
-  height: 250px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#Instagram {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	-webkit-background-clip: text;
+	/* Also define standard property for compatibility */
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .footerIndex {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .btnContact,
 .btnContact:hover,
 .btnContact:focus,
 .btnContact:active {
-  background-color: rgb(10, 22, 37);
-  color: white;
-  border-radius: 50px;
-  height: 50px;
-  width: 150px;
+	background-color: rgb(10, 22, 37);
+	color: white;
+	border-radius: 50px;
+	height: 50px;
+	width: 150px;
 }
 
-/* .btnContact:active {
-  
+/* ------------------------------------------------------------ */
+
+
+/* MAIN */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 375px;
+	height: 525px;
+	perspective: 1000px;
+	/* Remove this if you don't want the 3D effect */
+	margin-bottom: 7rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back,
+.flip-card-click {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+	border-radius: 10px;
+	box-shadow: 0.1rem 0.5rem 0.7rem rgba(0, 0, 0, 0.75);
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+	background-color: #bbb;
+	color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background: linear-gradient(152.25deg, rgba(63, 125, 199, 0.8) 0%, rgba(116, 26, 187, 0.8) 65%);
+	color: white;
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+}
+
+.animeImg {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	background: linear-gradient(180deg, #000000 0%, #760B0B 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+p {
+	/* PONERLE CLASE PARA NO USAR <p> */
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	pointer-events: none;
+}
+
+span {
+	/* PONERLE CLASE PARA NO USAR <span> */
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.allCards {
+	margin-bottom: 7rem;
+}
+
+.flipCardBtn {
+	border: none;
+	background-color: white;
+	color: black;
+	user-select: none;
+}
+
+.flipCardBtn:hover {
+	background-color: black;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+.closeCardBtn {
+	height: 50px;
+	width: 50px;
+	border: none;
+	background-color: rgb(13, 110, 253);
+}
+
+.closeCardBtn:hover {
+	background-color: rgb(20, 69, 159);
+	transition-duration: 0.3s;
+}
+
+.blur-click {
+	backdrop-filter: blur(5px);
+}
+
+.cardClickP {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.flip-card-click {
+	background-size: cover;
+	background-position: center;
+}
+
+.myAnimeListAnchor {
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	text-decoration: none;
+	color: white;
+	background-color: rgb(25, 135, 84);
+}
+
+.myAnimeListAnchor:hover {
+	color: white;
+	background-color: rgb(17, 81, 51);
+	transition-duration: 0.3s;
+}
+
+.firstText,
+.thirdText {
+	height: 300px;
+	background-color: rgba(10, 22, 37, 0.6);
+	border-radius: 50px;
+	color: rgb(238, 238, 238);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	user-select: none;
+}
+
+/* .firstText,
+.rowSecondText,
+.thirdText{
+	box-shadow: 0px 20px 160px blue;
 } */
 
-.linkFooter {
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: rgb(10, 22, 37);
-  text-decoration: none;
-  color: white;
+.rowSecondText {
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+/* .rowSecondText{
+	text-shadow: 5px 5px 8px lightblue;
+	box-shadow: 5px 5px 8px lightblue;
+} */
+
+.secondText {
+	/* height: 600px; */
+	height: 300px;
+	background-color: rgba(10, 22, 37, 0.6);
+	color: rgb(238, 238, 238);
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	user-select: none;
+}
+
+.h4MainIndex {
+	color: rgba(238, 238, 238, 1);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.pMainIndex {
+	color: rgba(172, 213, 242, 1);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.secondText1 {
+	border-top-left-radius: 50px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	text-align: left;
+}
+
+.secondText2 {
+	border-top-right-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+}
+
+.secondText3 {
+	border-bottom-left-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.secondText4 {
+	border-bottom-right-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+}
+
+.divMainText {
+	height: 250px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }

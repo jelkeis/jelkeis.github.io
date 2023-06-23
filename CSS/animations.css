@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------ Animations ------------------------------------------------------------ */
+
+@keyframes asd {
+	from {
+		width: 33.3%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+.asd {
+	animation-name: asd;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	z-index: 99;
+}
+
+/* @keyframes none {
+	from {
+		display: block;
+	}
+
+	to {
+		display: none!important;
+	}
+}
+.none {
+	animation-name: none;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	z-index: 99;
+} */
+
+
+@keyframes expandCard {
+	from {
+		width: 375px;
+		height: 525px;
+	}
+
+	to {
+		width: 854px;
+		height: 480px;
+	}
+}
+
+.expandCard {
+	animation-name: expandCard;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	z-index: 99;
+}
+
+
+
+@keyframes toLowerCard {
+	0% {
+		transform: translateY(0px); /* tengo que usar variables */
+	}
+
+	100% {
+		transform: translateY(749px); /* tengo que usar variables */
+	}
+}
+
+.toLowerCard {
+	animation-name: toLowerCard;
+	animation-duration: 0.8s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes toHigherCard {
+	from {
+		transform: translateY(749px);
+	}
+
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.toHigherCard{
+	animation-name: toHigherCard;
+	animation-duration: 1.2s;
+	animation-timing-function: ease-in;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+
+/* 	
+	se puede poner eso en clases y despues hacer que javascript ponga a traves del boton el nombre de las clases al clickear
+	
+	capaz puedo usar transform: translateY para moverlo hacia abajo, pero no se si es relativo o absoluto con las cards de abajo
+*/
